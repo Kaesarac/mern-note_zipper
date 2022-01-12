@@ -9,10 +9,9 @@ const LandingPage = () => {
         <Row>
           <div className="intro-text">
             <div>
-              <h1 className="title">Welcome &nbsp;&nbsp;to NotePad</h1>
+              <h1 className="title">Welcome to NotePad</h1>
               <p className="subtitle">
-                A not by any means special &nbsp;&nbsp;&nbsp;&nbsp; place to
-                store all your notes.
+                A not by any means special place to store all your notes.
               </p>
             </div>
             <div className="buttonContainer">
