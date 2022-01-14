@@ -1,3 +1,4 @@
+import { redirect } from "express/lib/response";
 import React from "react";
 import {
   Container,
@@ -35,7 +36,12 @@ const header = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">Delete Note</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
+            <Nav.Link
+              onClick={() => {
+                localStorage.removeItem("userInfo");
+                console.log("Done");
+              }}
+            >
               Logout
             </Nav.Link>
           </Nav>
